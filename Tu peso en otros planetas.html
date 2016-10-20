@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Peso en otros planetas</title>
+  <style type="text/css">
+  body {background-color: #B43104;}
+  h1 {color: #F7D358; font-size: 300%;}
+  h2 {color: #F3F781; font-size: 125%;}
+  p {color: #1C1C1C;}
+  </style>
+</head>
+<body>
+  <h1>Tu peso en otros planetas</h1>
+  <p>En la tierra pesas distinto a Marte o Jupiter</p>
+<script type="text/javascript">
+
+  var usuario = prompt("Cual es tu peso?");
+  var planeta = prompt("En que planeta deseas saber tu peso? \n 1. Marte \n 2. Jupiter \n 3. Saturno");
+
+  //alert(usuario);
+  //alert(planeta);
+
+  var grav_tierra = 9.8;
+  var grav_marte = 3.7;
+  var grav_jupiter = 24.79;
+  var grav_saturno = 10.44;
+
+
+  if (planeta == 1) {
+    var peso_et = (usuario * grav_marte) / grav_tierra;
+    var nombre_p = "Marte";
+  }
+  else if (planeta == 2) {
+    var peso_et = (usuario * grav_jupiter) / grav_tierra;
+    var nombre_p = "Jupiter"
+  }
+
+  else if (planeta == 3) {
+    var peso_et = (usuario * grav_saturno) / grav_tierra;
+    var nombre_p = "Saturno"
+  }
+
+
+  peso_et = parseInt(peso_et);
+
+  //alert(peso_et);
+
+  document.write("Tu peso en <strong>" + nombre_p + "</strong> es igual a <strong>" + peso_et + "</strong> Kg.")
+
+</script>
+</body>
+</html>
