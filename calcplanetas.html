@@ -15,29 +15,53 @@
 <script type="text/javascript">
 
   var usuario = prompt("Cual es tu peso?");
-  var planeta = prompt("En que planeta deseas saber tu peso? \n 1. Marte \n 2. Jupiter \n 3. Saturno");
+  var planeta = prompt("En que planeta deseas saber tu peso? \n 1. Mercurio \n 2. Venus \n 3. Marte \n 4. Jupiter \n 5. Saturno \n Urano \n Neptuno");
 
   //alert(usuario);
   //alert(planeta);
 
   var grav_tierra = 9.8;
+  var grav_mercurio = 3.7;
+  var grav_venus = 8.8;
   var grav_marte = 3.7;
-  var grav_jupiter = 24.79;
-  var grav_saturno = 10.44;
+  var grav_jupiter = 24.7;
+  var grav_saturno = 10.4;
+  var grav_urano = 8.6;
+  var grav_neptuno = 11.1
 
 
   if (planeta == 1) {
-    var peso_et = (usuario * grav_marte) / grav_tierra;
-    var nombre_p = "Marte";
+    var peso_et = (usuario * grav_mercurio) / grav_tierra;
+    var nombre_p = "Mercurio";
   }
   else if (planeta == 2) {
+    var peso_et = (usuario * grav_venus) / grav_tierra;
+    var nombre_p = "Venus"
+  }
+
+  else if (planeta == 3) {
+    var peso_et = (usuario * grav_marte) / grav_tierra;
+    var nombre_p = "Marte"
+  }
+
+  else if (planeta == 4) {
     var peso_et = (usuario * grav_jupiter) / grav_tierra;
     var nombre_p = "Jupiter"
   }
 
-  else if (planeta == 3) {
+  else if (planeta == 5) {
     var peso_et = (usuario * grav_saturno) / grav_tierra;
     var nombre_p = "Saturno"
+  }
+
+  else if (planeta == 6) {
+    var peso_et = (usuario * grav_urano) / grav_tierra;
+    var nombre_p = "Urano"
+  }
+
+  else if (planeta == 7) {
+    var peso_et = (usuario * grav_neptuno) / grav_tierra;
+    var nombre_p = "Neptuno"
   }
 
 
